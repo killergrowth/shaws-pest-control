@@ -633,7 +633,26 @@ div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,
 #comp-ljh10qsq { min-height: 0 !important; height: auto !important; }
 #comp-ljh10qsq [data-testid="responsive-container-content"] { height: auto !important; min-height: 0 !important; }
 #comp-ltef8bnh { min-height: 0 !important; height: auto !important; }
-</style></head>
+</style><style id="anti-fouc">#SITE_CONTAINER{opacity:0;transition:opacity 0.15s ease;}#SITE_CONTAINER.fouc-ready{opacity:1;}</style>
+<script>
+(function(){
+  function showSite(){
+    var el = document.getElementById('SITE_CONTAINER');
+    if(el){ el.classList.add('fouc-ready'); }
+    var s = document.getElementById('anti-fouc');
+    if(s){ s.remove(); }
+  }
+  // Show as soon as Wix has hydrated enough, or after 600ms fallback
+  var shown = false;
+  function safeShow(){ if(!shown){ shown=true; showSite(); } }
+  document.addEventListener('DOMContentLoaded', function(){
+    // Wait for Wix to run its first paint, then show
+    setTimeout(safeShow, 250);
+  });
+  // Hard fallback - never stay hidden
+  setTimeout(safeShow, 1000);
+})();
+</script></head>
 <body class="responsive" style="--scrollbar-width: 15px;">
 <script type="text/javascript"></script>
 
