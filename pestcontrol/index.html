@@ -681,7 +681,7 @@ div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,
     transform: none !important;
   }
 </style>
-<style id="anti-fouc">#SITE_CONTAINER,chat-widget{opacity:0;transition:opacity 0.15s ease;}#SITE_CONTAINER.fouc-ready,chat-widget.fouc-ready{opacity:1;}</style>
+<style id="anti-fouc">#SITE_CONTAINER,chat-widget{display:none!important;}#SITE_CONTAINER.fouc-ready,chat-widget.fouc-ready{display:block!important;}</style>
 <script>
 (function(){
   function showSite(){
