@@ -992,4 +992,29 @@ div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,
   }
 })();
 </script>
-</body></html>
+<script>
+(function() {
+  var sectionId = document.currentScript.getAttribute('data-section');
+  function fixHeight() {
+    var el = document.getElementById(sectionId);
+    if (!el) return;
+    el.style.gridTemplateRows = 'auto';
+    el.style.height = 'auto';
+    el.style.minHeight = '0';
+    el.querySelectorAll('[data-testid="responsive-container-content"]').forEach(function(c) {
+      c.style.gridTemplateRows = 'auto';
+      c.style.height = 'auto';
+      c.style.minHeight = '0';
+    });
+  }
+  fixHeight();
+  var observer = new MutationObserver(fixHeight);
+  document.addEventListener('DOMContentLoaded', function() {
+    var el = document.getElementById(sectionId);
+    if (el) { observer.observe(el, {attributes: true, attributeFilter: ['style'], subtree: true}); }
+    fixHeight();
+    setTimeout(fixHeight, 500);
+    setTimeout(fixHeight, 1500);
+  });
+})();
+</script></body></html>
