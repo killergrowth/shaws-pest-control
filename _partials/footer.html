@@ -1,0 +1,76 @@
+<footer class="kg-footer">
+  <div class="container">
+    <div class="kg-footer-grid">
+      <div class="kg-footer-about">
+        <img src="/images/shaws_black_logo.png" alt="Shaw's Pest Control" style="width:200px;height:auto;display:block;filter:brightness(0) invert(1);">
+        <p>Locally owned, faith-based pest control serving Butler and Sedgwick County since 1987. Residential and commercial structural pest control with integrity.</p>
+        <a href="/contact/" class="btn btn-primary" style="margin-top:16px;">Get a Free Estimate</a>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <ul class="kg-footer-links">
+          <li><a href="/pestcontrol/">General Pest Control</a></li>
+          <li><a href="/termites/">Termite Control</a></li>
+          <li><a href="/mosquito-control/">Mosquito Control</a></li>
+          <li><a href="/pest-control-spiders/">Spider Control</a></li>
+          <li><a href="/pest-control-ants/">Ant Control</a></li>
+          <li><a href="/pest-control-roaches/">Roach Control</a></li>
+          <li><a href="/pest-control-bedbugs/">Bed Bug Control</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul class="kg-footer-links">
+          <li><a href="/wichita/">Wichita</a></li>
+          <li><a href="/el-dorado/">El Dorado</a></li>
+          <li><a href="/derby/">Derby</a></li>
+          <li><a href="/andover/">Andover</a></li>
+          <li><a href="/augusta/">Augusta</a></li>
+          <li><a href="/haysville/">Haysville</a></li>
+          <li><a href="/maize/">Maize</a></li>
+          <li><a href="/goddard/">Goddard</a></li>
+          <li><a href="/service-areas/">All Service Areas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="kg-footer-contact" style="list-style:none;padding:0;">
+          <li style="display:flex;gap:10px;margin-bottom:10px;">
+            <span>&#128205;</span>
+            <span>El Dorado, KS &mdash; Serving Butler &amp; Sedgwick County</span>
+          </li>
+          <li style="display:flex;gap:10px;margin-bottom:10px;">
+            <span>&#128222;</span>
+            <a href="tel:3162519461">(316) 251-9461</a>
+          </li>
+        </ul>
+        <p style="font-size:0.82rem;margin-top:16px;color:rgba(255,255,255,0.5);">Three State Certifications &bull; Master Tech Certification</p>
+      </div>
+    </div>
+  </div>
+  <div class="kg-footer-bottom">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;">
+      <p style="margin:0;">&copy; <span class="dynamic-year"></span> Shaw's Pest Control. All Rights Reserved.</p>
+      <p style="margin:0;"><a href="/privacy-policy/" style="color:inherit;opacity:0.7;">Privacy Policy</a> &bull; Website by <a href="https://killergrowth.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;">KillerGrowth</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+  document.querySelectorAll('.dynamic-year').forEach(el => el.textContent = new Date().getFullYear());
+  const hdr = document.getElementById('kg-header');
+  if (hdr) window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', window.scrollY > 60), { passive: true });
+  const ham = document.getElementById('kg-hamburger');
+  const mob = document.getElementById('kg-mobile-nav');
+  if (ham && mob) ham.addEventListener('click', () => {
+    const open = mob.classList.toggle('open');
+    ham.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
