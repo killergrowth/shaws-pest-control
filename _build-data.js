@@ -7,7 +7,7 @@ module.exports = {
     phone: "(316) 251-9461",
     phoneRaw: "3162519461",
     email: "info@shawspest.com",
-    address: "El Dorado, KS",
+    address: "303 Commerce St Ste 2, El Dorado, KS 67042",
     city: "El Dorado",
     state: "KS",
     zip: "67042",
@@ -21,7 +21,7 @@ module.exports = {
     description: "Shaw's Pest Control is a locally owned, faith-based pest control company serving Butler and Sedgwick County since 1987. Residential and commercial structural pest control, termite inspections, mosquito reduction, and more.",
     certifications: "Three State Certifications & Master Tech Certification",
     owner: "Dave Shaw",
-    reviews: { rating: "5.0", count: "50" },
+    reviews: { rating: "4.9", count: "52" },
   },
   services: [
     {

@@ -1,0 +1,33 @@
+# Shaw's Pest Control — _redirects
+# Preserve original site slugs from Wix export
+# DO NOT REMOVE entries — redirects are permanent
+
+# Original Wix page slugs → new KillerSite structure
+# These existing slugs are PRESERVED (no redirect needed):
+#   /pestcontrol/        → unchanged
+#   /termites/           → unchanged
+#   /mosquito-control/   → unchanged
+#   /pest-control-spiders/ → unchanged
+#   /pest-control-ants/  → unchanged
+#   /pest-control-roaches/ → unchanged
+#   /pest-control-bedbugs/ → unchanged
+
+# Legacy Wix paths (with trailing page segments)
+/pestcontrol           /pestcontrol/           301
+/termites              /termites/              301
+/mosquito-control      /mosquito-control/      301
+/pest-control-spiders  /pest-control-spiders/  301
+/pest-control-ants     /pest-control-ants/     301
+/pest-control-roaches  /pest-control-roaches/  301
+/pest-control-bedbugs  /pest-control-bedbugs/  301
+
+# Common Wix URL patterns
+/get-a-quote           /contact/               301
+/quote                 /contact/               301
+/contact-us            /contact/               301
+/about-us              /about/                 301
+/services              /pestcontrol/           301
+
+# Wix generic patterns
+/home                  /                       301
+/blank-1               /                       301
