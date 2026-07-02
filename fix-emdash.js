@@ -1,14 +1,23 @@
 const fs = require('fs');
+
 const path = 'lib/build-pages.js';
 let text = fs.readFileSync(path, 'utf8');
 
-// The mangled sequence \u00e2\u20ac\u201d is the Windows-1252 double-encoded em dash
-// Replace with a clean hyphen
-text = text.replace(/\u00e2\u20ac\u201d/g, '-');
-text = text.replace(/\u00e2\u20ac\u201c/g, '-');
-text = text.replace(/--"/g, '-');  // clean up any leftover artifact from prior fix
+// Fix the specific broken string on line ~105
+// Pattern: ends string prematurely with -" inside an answer
+text = text.replace(
+  'since 1987 -" over 35 years of trusted pest control service."',
+  'since 1987 - over 35 years of trusted pest control service."'
+);
+
+// Also catch any other -" patterns inside answer strings that would break JS
+// (stray closing quote after a hyphenated replacement)
+text = text.replace(/-" /g, '- ');
+text = text.replace(/-"\)/g, '-")');
 
 fs.writeFileSync(path, text, 'utf8');
-console.log('Done. Checking metaDesc:');
-const idx = text.indexOf('metaDesc: "Shaw');
-console.log(text.substring(idx, idx + 130));
+console.log('Patched line 105');
+
+// Verify
+const idx = text.indexOf('since 1987');
+console.log('Context:', text.substring(idx, idx + 80));
