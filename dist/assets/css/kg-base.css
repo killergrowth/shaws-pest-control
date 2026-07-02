@@ -90,7 +90,7 @@ section { padding: 88px 0; }
 .kg-logo img { height: 54px; width: auto; }
 .kg-nav { display: flex; align-items: center; gap: 2px; margin-left: auto; }
 .kg-nav-dropdown { display: flex; align-items: center; }
-.kg-nav > a, .kg-nav-dropdown > a { position: relative; display: inline-flex; align-items: center; padding: 9px 15px; line-height: 1.2; color: var(--kg-secondary); font-weight: 600; font-size: 0.92rem; border-radius: 8px; white-space: nowrap; }
+.kg-nav > a, .kg-nav-dropdown > a { position: relative; display: inline-flex; align-items: center; padding: 9px 15px; line-height: 1.2; color: var(--kg-secondary); font-weight: 600; font-size: 1.08rem; border-radius: 8px; white-space: nowrap; }
 .kg-nav > a::after, .kg-nav-dropdown > a::after { content: ''; position: absolute; left: 15px; right: 15px; bottom: 4px; height: 2px; background: var(--kg-accent); border-radius: 2px; transform: scaleX(0); transform-origin: left; transition: transform 0.22s ease; }
 .kg-nav > a:hover::after, .kg-nav-dropdown > a:hover::after { transform: scaleX(1); }
 .kg-nav > a:hover, .kg-nav-dropdown > a:hover { background: var(--kg-primary-tint); text-decoration: none; }
