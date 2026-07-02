@@ -63,7 +63,7 @@ p:last-child { margin-bottom: 0; }
 .kg-emergency-bar a:hover { opacity: 0.85; }
 
 /* === Buttons === */
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 30px; border-radius: 100px; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.01em; cursor: pointer; border: 2px solid transparent; transition: all 0.22s cubic-bezier(.4,0,.2,1); text-decoration: none; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 34px; border-radius: 100px; font-weight: 700; font-size: 1.1rem; letter-spacing: 0.01em; cursor: pointer; border: 2px solid transparent; transition: all 0.22s cubic-bezier(.4,0,.2,1); text-decoration: none; }
 .btn-primary { background: var(--kg-primary); color: #fff; border-color: var(--kg-primary); box-shadow: 0 4px 14px var(--kg-primary-glow); }
 .btn-primary:hover { background: var(--kg-primary-dark); border-color: var(--kg-primary-dark); text-decoration: none; color: #fff; transform: translateY(-2px); box-shadow: 0 8px 22px var(--kg-primary-glow); }
 .btn-secondary { background: var(--kg-secondary); color: #fff; border-color: var(--kg-secondary); }
