@@ -8,6 +8,7 @@ const { copyAssets, DIST, services, cities } = require('./lib/shared');
 const { buildHome, buildAbout, buildContact, buildServicePage } = require('./lib/build-pages');
 const { buildLocationPage, buildComboPage, buildServiceAreasHub, buildPrivacyPolicy, build404 } = require('./lib/build-pages-2');
 const { buildBlog } = require('./lib/build-blog');
+const { buildSitemap } = require('./lib/build-sitemap');
 
 async function main() {
   console.log("\nShaw's Pest Control — Build Start");
@@ -35,6 +36,7 @@ async function main() {
   buildPrivacyPolicy();
   build404();
   buildBlog();
+  buildSitemap();
 
   // Count built pages
   function countHtml(dir) {
