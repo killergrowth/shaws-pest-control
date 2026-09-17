@@ -103,14 +103,14 @@ module.exports = {
     },
   ],
   cities: [
-    { name: "Wichita",       slug: "wichita",       county: "Sedgwick", population: "397,532", state: "KS", lat: "37.6872", lng: "-97.3301" },
-    { name: "El Dorado",     slug: "el-dorado",     county: "Butler",   population: "12,957",  state: "KS", lat: "37.8178", lng: "-96.8617" },
-    { name: "Derby",         slug: "derby",         county: "Sedgwick", population: "24,912",  state: "KS", lat: "37.5536", lng: "-97.2681" },
     { name: "Andover",       slug: "andover",       county: "Butler",   population: "15,277",  state: "KS", lat: "37.7164", lng: "-97.1395" },
     { name: "Augusta",       slug: "augusta",       county: "Butler",   population: "9,389",   state: "KS", lat: "37.6928", lng: "-96.9767" },
+    { name: "Derby",         slug: "derby",         county: "Sedgwick", population: "24,912",  state: "KS", lat: "37.5536", lng: "-97.2681" },
+    { name: "El Dorado",     slug: "el-dorado",     county: "Butler",   population: "12,957",  state: "KS", lat: "37.8178", lng: "-96.8617" },
+    { name: "Goddard",       slug: "goddard",       county: "Sedgwick", population: "5,120",   state: "KS", lat: "37.6611", lng: "-97.5700" },
     { name: "Haysville",     slug: "haysville",     county: "Sedgwick", population: "11,098",  state: "KS", lat: "37.5643", lng: "-97.3520" },
     { name: "Maize",         slug: "maize",         county: "Sedgwick", population: "4,898",   state: "KS", lat: "37.7731", lng: "-97.4653" },
-    { name: "Goddard",       slug: "goddard",       county: "Sedgwick", population: "5,120",   state: "KS", lat: "37.6611", lng: "-97.5700" },
+    { name: "Wichita",       slug: "wichita",       county: "Sedgwick", population: "397,532", state: "KS", lat: "37.6872", lng: "-97.3301" },
   ],
   reviews: [
     { author: "Charlotte Brown", text: "Dave is great to work with! Always addresses my concerns and there when we need him. Recommend Shaw's!", rating: 5, date: "2024-09-15" },
