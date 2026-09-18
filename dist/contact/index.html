@@ -89,6 +89,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
       <a href="/about/">About</a>
+      <a href="/blog/">Blog</a>
       <a href="/contact/">Contact</a>
     </nav>
     <div class="kg-header-cta">
@@ -122,6 +123,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <a href="/maize/">Maize</a>
   <a href="/wichita/">Wichita</a>
   <a href="/about/">About Us</a>
+  <a href="/blog/">Blog</a>
   <a href="/contact/">Contact</a>
   <a href="tel:3162519461" style="color:var(--kg-secondary);font-size:1.2rem;font-weight:700;margin-top:12px;">(316) 251-9461</a>
 </nav>
@@ -137,26 +139,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section>
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
+      <!-- Form Card -->
       <div>
-        <h2>Send Us a Message</h2>
-        <form action="/submit" method="POST" class="kg-form" id="contact-form">
-          <input type="hidden" name="page" value="contact">
-          <div class="kg-form-group">
-            <label for="name">Your Name <span style="color:red;">*</span></label>
-            <input type="text" id="name" name="name" required placeholder="Dave Smith">
-          </div>
-          <div class="kg-form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com">
-          </div>
-          <div class="kg-form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="(316) 555-0100">
-          </div>
-          <div class="kg-form-group">
-            <label for="service">Service Needed</label>
-            <select id="service" name="service">
-              <option value="">Select a service...</option>
+        <div style="background:#fff;border-radius:10px;box-shadow:0 8px 40px rgba(0,0,0,0.18);padding:36px 32px;">
+          <h2 style="font-size:20px;font-weight:800;color:#1a2a24;margin-bottom:6px;">Request Your Free Estimate</h2>
+          <p style="font-size:13px;color:#7E7C76;margin-bottom:24px;">We'll reach out quickly &mdash; usually within the hour.</p>
+          <form action="/submit" method="POST" id="contact-form" style="display:flex;flex-direction:column;gap:14px;">
+            <input type="hidden" name="page" value="contact">
+            <input type="text" id="name" name="name" required placeholder="Your Name" autocomplete="name"
+              style="width:100%;padding:13px 16px;border:1.5px solid #E2DDD8;border-radius:6px;font-family:inherit;font-size:15px;color:#1a2a24;background:#fafafa;transition:border-color .2s;outline:none;">
+            <input type="tel" id="phone" name="phone" required placeholder="Phone Number" autocomplete="tel"
+              style="width:100%;padding:13px 16px;border:1.5px solid #E2DDD8;border-radius:6px;font-family:inherit;font-size:15px;color:#1a2a24;background:#fafafa;transition:border-color .2s;outline:none;">
+            <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="email"
+              style="width:100%;padding:13px 16px;border:1.5px solid #E2DDD8;border-radius:6px;font-family:inherit;font-size:15px;color:#1a2a24;background:#fafafa;transition:border-color .2s;outline:none;">
+            <select id="service" name="service"
+              style="width:100%;padding:13px 16px;border:1.5px solid #E2DDD8;border-radius:6px;font-family:inherit;font-size:15px;color:#1a2a24;background:#fafafa;transition:border-color .2s;outline:none;">
+              <option value="">Service Needed...</option>
               <option>General Pest Control</option>
               <option>Termite Control</option>
               <option>Mosquito Control</option>
@@ -166,38 +164,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <option>Bed Bug Control</option>
               <option>Other</option>
             </select>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your pest problem..."
+              style="width:100%;padding:13px 16px;border:1.5px solid #E2DDD8;border-radius:6px;font-family:inherit;font-size:15px;color:#1a2a24;background:#fafafa;transition:border-color .2s;outline:none;resize:vertical;min-height:90px;"></textarea>
+            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+            <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="light"></div>
+            <button type="submit" id="form-submit-btn"
+              style="background:var(--kg-primary);color:#fff;border:none;border-radius:100px;font-family:inherit;font-size:16px;font-weight:700;padding:16px 24px;cursor:pointer;transition:background .2s;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;">
+              &#128203; Send My Request
+            </button>
+            <p style="font-size:12px;color:#9E9A95;text-align:center;margin:0;">&#128274; Your info is private. We'll never spam you.</p>
+            <div id="form-error" style="display:none;padding:14px 16px;background:#f8d7da;border-radius:8px;color:#721c24;font-size:14px;">Something went wrong. Please call <a href="tel:3162519461" style="color:#721c24;font-weight:700;">(316) 251-9461</a>.</div>
+          </form>
+          <div id="form-success" style="display:none;text-align:center;padding:20px 0;">
+            <div style="font-size:48px;color:var(--kg-primary);margin-bottom:12px;">&#10003;</div>
+            <h3 style="font-size:22px;font-weight:800;color:#1a2a24;margin-bottom:8px;">Got it &mdash; thank you!</h3>
+            <p style="color:#7E7C76;font-size:15px;">We'll be in touch shortly. Or call us now at <a href="tel:3162519461" style="color:var(--kg-primary);font-weight:700;">(316) 251-9461</a>.</p>
           </div>
-          <div class="kg-form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us about your pest problem..."></textarea>
-          </div>
-          <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-          <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" style="margin-bottom:16px;"></div>
-          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
-          <div id="form-success" style="display:none;margin-top:16px;padding:16px;background:#d4edda;border-radius:8px;color:#155724;">&#10003; Message sent! We'll be in touch soon.</div>
-          <div id="form-error" style="display:none;margin-top:16px;padding:16px;background:#f8d7da;border-radius:8px;color:#721c24;">Something went wrong. Please call (316) 251-9461.</div>
-        </form>
+        </div>
+        <style>
+          #contact-form input:focus, #contact-form select:focus, #contact-form textarea:focus { border-color: var(--kg-primary); }
+          #form-submit-btn:hover { background: var(--kg-primary-dark); }
+        </style>
         <script>
         document.getElementById('contact-form').addEventListener('submit', async function(e) {
           e.preventDefault();
-          const btn = this.querySelector('button[type=submit]');
+          const btn = document.getElementById('form-submit-btn');
           btn.textContent = 'Sending...'; btn.disabled = true;
+          document.getElementById('form-error').style.display = 'none';
           try {
-            const res = await fetch('/submit', { method:'POST', body: new FormData(this) });
+            const res = await fetch('/submit', { method: 'POST', body: new FormData(this) });
             const d = await res.json();
-            if (d.ok) { document.getElementById('form-success').style.display='block'; this.reset(); }
-            else { throw new Error(d.error||'Error'); }
+            if (d.ok) {
+              this.style.display = 'none';
+              document.getElementById('form-success').style.display = 'block';
+            } else { throw new Error(d.error || 'Error'); }
           } catch(err) {
-            document.getElementById('form-error').style.display='block';
+            document.getElementById('form-error').style.display = 'block';
             if (window.turnstile) window.turnstile.reset();
+            btn.textContent = '📋 Send My Request'; btn.disabled = false;
           }
-          btn.textContent='Send Message'; btn.disabled=false;
         });
         </script>
       </div>
+      <!-- Contact Info Sidebar -->
       <div>
-        <h2>Contact Info</h2>
         <div class="kg-card" style="padding:28px;margin-bottom:24px;">
+          <h3 style="margin-bottom:16px;">Contact Info</h3>
           <p><strong>&#128222; Phone:</strong><br><a href="tel:3162519461" style="font-size:1.3rem;font-weight:700;color:var(--kg-primary);">(316) 251-9461</a></p>
           <p style="margin-top:16px;"><strong>&#128205; Address:</strong><br>303 Commerce St Ste 2<br>El Dorado, KS 67042</p>
           <p style="margin-top:16px;"><strong>Service Area:</strong><br>Butler and Sedgwick County and surrounding areas, Kansas</p>
@@ -205,7 +217,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <div class="kg-card" style="padding:28px;">
           <h4>Business Hours</h4>
-          <p>Monday &mdash; Friday: 8:00 AM &ndash; 5:00 PM<br>Saturday: By appointment<br>Sunday: Closed</p>
+          <p style="margin-top:12px;">Monday &mdash; Friday: 8:00 AM &ndash; 5:00 PM<br>Saturday: By appointment<br>Sunday: Closed</p>
         </div>
       </div>
     </div>
