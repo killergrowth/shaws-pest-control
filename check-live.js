@@ -1,41 +1,37 @@
 const https = require('https');
+https.get('https://staging.shaws-pest-control.pages.dev/pestcontrol/', res => {
+  let data = '';
+  res.on('data', chunk => data += chunk);
+  res.on('end', () => {
+    const bodyStart = data.indexOf('<body');
+    const body = data.slice(bodyStart);
+    // Remove all script blocks
+    const clean = body.replace(/<script[\s\S]*?<\/script>/g, '');
+    // Look for raw JSON
+    const marker = '@type';
+    const idx = clean.indexOf(marker);
+    if (idx > -1) {
+      console.log('RAW JSON IN BODY at index:', idx);
+      console.log(clean.slice(Math.max(0, idx - 100), idx + 500));
+    } else {
+      console.log('CLEAN - no raw JSON in body');
+    }
+    // Script balance
+    const opens = (data.match(/<script/g) || []).length;
+    const closes = (data.match(/<\/script>/g) || []).length;
+    console.log('Script tag balance - opens:', opens, 'closes:', closes);
 
-function checkPage(url) {
-  return new Promise((resolve) => {
-    https.get(url, res => {
-      let data = '';
-      res.on('data', d => data += d);
-      res.on('end', () => {
-        console.log('\n=== ' + url + ' ===');
-        const openCount = (data.match(/<script/g)||[]).length;
-        const closeCount = (data.match(/<\/script>/g)||[]).length;
-        console.log('Script tags open/close:', openCount, '/', closeCount);
-        
-        // Check for ld+json blocks
-        const ldBlocks = [...data.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
-        console.log('LD+JSON blocks found:', ldBlocks.length);
-        ldBlocks.forEach((b, i) => {
-          try { JSON.parse(b[1]); console.log('  Block', i, 'VALID JSON'); }
-          catch(e) { console.log('  Block', i, 'INVALID:', e.message, '| Preview:', b[1].substring(0,100)); }
-        });
-        
-        // Strip all script tags and check for JSON-like content
-        const noScripts = data.replace(/<script[\s\S]*?<\/script>/g, '');
-        const hasAcceptedAnswer = noScripts.includes('acceptedAnswer');
-        const hasAtType = noScripts.includes('"@type"');
-        console.log('acceptedAnswer outside scripts:', hasAcceptedAnswer);
-        console.log('@type outside scripts:', hasAtType);
-        
-        if (hasAcceptedAnswer) {
-          const idx = noScripts.indexOf('acceptedAnswer');
-          console.log('Context:', noScripts.substring(Math.max(0, idx-200), idx+300));
-        }
-        
-        resolve();
-      });
-    }).on('error', e => { console.log('Error:', e.message); resolve(); });
+    // Find if any script tag closes too early (has </script> inside a ld+json block)
+    const ldBlocks = [...data.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+    console.log('LD+JSON blocks found:', ldBlocks.length);
+    ldBlocks.forEach((m, i) => {
+      try {
+        JSON.parse(m[1]);
+        console.log('Block', i, 'valid JSON');
+      } catch(e) {
+        console.log('Block', i, 'INVALID JSON:', e.message.slice(0,100));
+        console.log('Content start:', m[1].slice(0, 200));
+      }
+    });
   });
-}
-
-checkPage('https://staging.shaws-pest-control.pages.dev/pest-control-bedbugs/')
-  .then(() => checkPage('https://staging.shaws-pest-control.pages.dev/pestcontrol/'));
+});
