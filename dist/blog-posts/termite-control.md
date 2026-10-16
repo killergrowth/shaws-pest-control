@@ -1,7 +1,7 @@
 ---
 slug: termite-control
 title: 'Termite Control in El Dorado, KS: What Homeowners Actually Need to Know'
-status: scheduled
+status: published
 publishDate: '2026-10-16'
 scheduledDate: '2026-10-16'
 excerpt: >-
