@@ -1,7 +1,7 @@
 ---
 slug: orlin-pest-control
 title: ''
-status: scheduled
+status: published
 publishDate: '2026-10-20'
 scheduledDate: '2026-10-20'
 excerpt: ''
