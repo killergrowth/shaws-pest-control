@@ -3,7 +3,7 @@ slug: carpenter-ant-pest-control
 title: >-
   Carpenter Ant Pest Control: How El Dorado Homeowners Can Spot and Stop an
   Infestation
-status: scheduled
+status: published
 publishDate: '2026-10-23'
 scheduledDate: '2026-10-23'
 excerpt: >-
