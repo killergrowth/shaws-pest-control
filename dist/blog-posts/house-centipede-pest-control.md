@@ -11,8 +11,8 @@ excerpt: >-
   attracting them to your El Dorado home — and how to make your house less
   appealing.
 featuredImage: blog-posts/images/house-centipede-pest-control.jpg
-inlineImage1: null
-inlineImage2: null
+inlineImage1: blog-posts/images/house-centipede-pest-control-inline1.jpg
+inlineImage2: blog-posts/images/house-centipede-pest-control-inline2.jpg
 imagePrompt: >-
   I need an image of an extreme close-up of a house centipede on a damp basement
   floor near a floor drain, its long legs and antennae in sharp detail, shallow
