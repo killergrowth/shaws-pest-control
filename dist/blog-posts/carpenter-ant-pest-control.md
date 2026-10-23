@@ -9,9 +9,9 @@ scheduledDate: '2026-10-23'
 excerpt: >-
   Carpenter ants can quietly damage your home's wood for months before you
   notice. Here's how to spot the signs early and what real treatment looks like.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/carpenter-ant-pest-control.jpg
+inlineImage1: blog-posts/images/carpenter-ant-pest-control-inline1.jpg
+inlineImage2: blog-posts/images/carpenter-ant-pest-control-inline2.jpg
 imagePrompt: >-
   I need an image of a close-up shot of a wooden deck post with sawdust-like
   frass piled at its base in natural outdoor light, no people visible,

@@ -7,9 +7,9 @@ scheduledDate: '2026-11-03'
 excerpt: >-
   Thinking about Moxie Pest Control in El Dorado, KS? Here's what their
   contracts actually involve and how a local alternative compares.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/moxie-pest-control.jpg
+inlineImage1: blog-posts/images/moxie-pest-control-inline1.jpg
+inlineImage2: blog-posts/images/moxie-pest-control-inline2.jpg
 imagePrompt: >-
   I need an image of a top-down flat-lay of a pest control service contract, a
   pen, and a magnifying glass resting on the fine print, clean overhead angle,

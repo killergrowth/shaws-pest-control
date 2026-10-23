@@ -7,9 +7,9 @@ scheduledDate: '2026-10-16'
 excerpt: >-
   Termites cause billions in damage yearly and most homeowners miss the signs.
   Here's what El Dorado homeowners need to know before it's too late.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/termite-control.jpg
+inlineImage1: blog-posts/images/termite-control-inline1.jpg
+inlineImage2: blog-posts/images/termite-control-inline2.jpg
 imagePrompt: >-
   I need an image of a split composition showing weathered, damaged wood with
   visible termite tunneling on one side transitioning to solid, healthy

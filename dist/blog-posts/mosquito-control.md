@@ -7,9 +7,9 @@ scheduledDate: '2026-11-17'
 excerpt: >-
   Tired of mosquito bites ruining your backyard evenings? Here's what actually
   reduces mosquito populations around El Dorado homes.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/mosquito-control.jpg
+inlineImage1: blog-posts/images/mosquito-control-inline1.jpg
+inlineImage2: blog-posts/images/mosquito-control-inline2.jpg
 imagePrompt: >-
   I need an image of a wide exterior shot of a modest single-story home in El
   Dorado, Kansas with a well-kept backyard patio at dusk, string lights glowing

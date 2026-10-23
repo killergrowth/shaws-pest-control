@@ -9,9 +9,9 @@ scheduledDate: '2026-11-10'
 excerpt: >-
   Stink bugs piling up on your windows and siding this fall? Here's why it
   happens in El Dorado and what actually works to stop it.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/pest-control-for-stink-bugs.jpg
+inlineImage1: blog-posts/images/pest-control-for-stink-bugs-inline1.jpg
+inlineImage2: blog-posts/images/pest-control-for-stink-bugs-inline2.jpg
 imagePrompt: >-
   I need an image of an extreme close-up of several brown marmorated stink bugs
   clustered on a window screen with soft afternoon sunlight filtering through,

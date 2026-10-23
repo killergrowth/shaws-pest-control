@@ -10,9 +10,9 @@ excerpt: >-
   Here's what Aptive Pest Control actually offers, what it costs, and what real
   customers say &mdash; plus what to know before signing with any national
   provider.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/aptive-pest-control.jpg
+inlineImage1: blog-posts/images/aptive-pest-control-inline1.jpg
+inlineImage2: blog-posts/images/aptive-pest-control-inline2.jpg
 imagePrompt: >-
   I need an image of a person at a kitchen table reviewing a printed pest
   control service contract alongside a tablet showing a simple bar chart,

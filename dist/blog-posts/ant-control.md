@@ -7,9 +7,9 @@ scheduledDate: '2026-10-30'
 excerpt: >-
   Ant control works best when you kill the colony, not just the trail. Here's
   what actually gets rid of ants for good.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/ant-control.jpg
+inlineImage1: blog-posts/images/ant-control-inline1.jpg
+inlineImage2: blog-posts/images/ant-control-inline2.jpg
 imagePrompt: >-
   I need an image of a close-up shot of a wooden deck post with sawdust-like
   frass piled at its base in natural outdoor light, no people visible,

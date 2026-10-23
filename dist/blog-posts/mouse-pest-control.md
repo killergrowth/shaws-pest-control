@@ -7,9 +7,9 @@ scheduledDate: '2026-11-06'
 excerpt: >-
   Seeing one mouse usually means more are hiding. Here's how mouse pest control
   really works, from sealing entry points to knowing when to call in help.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/mouse-pest-control.jpg
+inlineImage1: blog-posts/images/mouse-pest-control-inline1.jpg
+inlineImage2: blog-posts/images/mouse-pest-control-inline2.jpg
 imagePrompt: >-
   I need an image of a minimalist visual metaphor for the post topic — a single
   small gap or crack in a home's foundation wall glowing subtly to represent a

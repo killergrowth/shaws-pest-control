@@ -7,7 +7,7 @@ scheduledDate: '2026-10-13'
 excerpt: >-
   Bed bugs don't go away with a few sprays from the hardware store. Here's what
   real bed bug treatment involves and why El Dorado homeowners call in pros.
-featuredImage: null
+featuredImage: blog-posts/images/bed-bug-treatment.jpg
 inlineImage1: null
 inlineImage2: null
 imagePrompt: >-

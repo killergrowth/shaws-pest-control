@@ -7,9 +7,9 @@ scheduledDate: '2026-11-13'
 excerpt: >-
   Spiders aren't random — they follow food, moisture, and shelter. Here's why
   they keep coming back and what actually works to keep them out for good.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/spider-pest-control.jpg
+inlineImage1: blog-posts/images/spider-pest-control-inline1.jpg
+inlineImage2: blog-posts/images/spider-pest-control-inline2.jpg
 imagePrompt: >-
   I need an image of a homeowner standing in their kitchen doorway looking
   relieved while glancing at a now-clean countertop, soft morning light through
