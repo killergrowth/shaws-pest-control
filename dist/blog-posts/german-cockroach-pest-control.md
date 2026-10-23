@@ -7,9 +7,9 @@ scheduledDate: '2026-11-27'
 excerpt: >-
   German cockroaches breed fast and hide well. Here's why DIY treatments fail
   and what it actually takes to get rid of them for good in El Dorado.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/german-cockroach-pest-control.jpg
+inlineImage1: blog-posts/images/german-cockroach-pest-control-inline1.jpg
+inlineImage2: blog-posts/images/german-cockroach-pest-control-inline2.jpg
 imagePrompt: >-
   I need an image of an extreme close-up of a German cockroach on a kitchen
   countertop near a crumb, sharp detail on the insect's shell and antennae,

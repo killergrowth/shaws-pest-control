@@ -9,9 +9,9 @@ scheduledDate: '2026-11-24'
 excerpt: >-
   Searching for Cook's Pest Control near El Dorado, KS? Here's what to expect
   and why many local homeowners choose a true local alternative instead.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/cooks-pest-control.jpg
+inlineImage1: blog-posts/images/cooks-pest-control-inline1.jpg
+inlineImage2: blog-posts/images/cooks-pest-control-inline2.jpg
 imagePrompt: >-
   I need an image of a wide exterior shot of a modest single-story ranch home in
   El Dorado, Kansas on a quiet residential street, midday natural light, a small

@@ -10,7 +10,7 @@ excerpt: >-
   Seeing a house centipede skitter across your floor? Here's what's actually
   attracting them to your El Dorado home — and how to make your house less
   appealing.
-featuredImage: null
+featuredImage: blog-posts/images/house-centipede-pest-control.jpg
 inlineImage1: null
 inlineImage2: null
 imagePrompt: >-
