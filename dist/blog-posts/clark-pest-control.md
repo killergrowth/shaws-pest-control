@@ -9,9 +9,9 @@ scheduledDate: '2026-12-04'
 excerpt: >-
   Searching "Clark Pest Control" in El Dorado? Here's what that name actually
   means locally, and what to look for in a pest company near you.
-featuredImage: null
-inlineImage1: null
-inlineImage2: null
+featuredImage: blog-posts/images/clark-pest-control.jpg
+inlineImage1: blog-posts/images/clark-pest-control-inline1.jpg
+inlineImage2: blog-posts/images/clark-pest-control-inline2.jpg
 imagePrompt: >-
   I need an image of a wide exterior shot of a modest single-story ranch home in
   El Dorado, Kansas on a quiet residential street, midday natural light, a small
