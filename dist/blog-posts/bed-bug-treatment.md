@@ -8,8 +8,8 @@ excerpt: >-
   Bed bugs don't go away with a few sprays from the hardware store. Here's what
   real bed bug treatment involves and why El Dorado homeowners call in pros.
 featuredImage: blog-posts/images/bed-bug-treatment.jpg
-inlineImage1: null
-inlineImage2: null
+inlineImage1: blog-posts/images/bed-bug-treatment-inline1.jpg
+inlineImage2: blog-posts/images/bed-bug-treatment-inline2.jpg
 imagePrompt: >-
   I need an image of an extreme close-up of a mattress seam being inspected with
   a flashlight, showing the texture of the fabric stitching in sharp detail, no
