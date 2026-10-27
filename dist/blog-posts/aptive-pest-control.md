@@ -3,7 +3,7 @@ slug: aptive-pest-control
 title: >-
   Aptive Pest Control: What It Is, What It Costs, and What El Dorado Homeowners
   Should Know
-status: scheduled
+status: published
 publishDate: '2026-10-27'
 scheduledDate: '2026-10-27'
 excerpt: >-
