@@ -1,7 +1,7 @@
 ---
 slug: ant-control
 title: 'Ant Control: Why They Keep Coming Back and How to Actually Stop Them'
-status: scheduled
+status: published
 publishDate: '2026-10-30'
 scheduledDate: '2026-10-30'
 excerpt: >-
