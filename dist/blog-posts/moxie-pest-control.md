@@ -1,7 +1,7 @@
 ---
 slug: moxie-pest-control
 title: 'Moxie Pest Control: What El Dorado Homeowners Should Know Before Signing Up'
-status: scheduled
+status: published
 publishDate: '2026-11-03'
 scheduledDate: '2026-11-03'
 excerpt: >-
