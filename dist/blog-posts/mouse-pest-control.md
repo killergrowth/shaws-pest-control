@@ -1,7 +1,7 @@
 ---
 slug: mouse-pest-control
 title: 'Mouse Pest Control: How to Actually Get Rid of Mice (Not Just the One You Saw)'
-status: scheduled
+status: published
 publishDate: '2026-11-06'
 scheduledDate: '2026-11-06'
 excerpt: >-
