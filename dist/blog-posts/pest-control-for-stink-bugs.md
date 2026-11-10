@@ -3,7 +3,7 @@ slug: pest-control-for-stink-bugs
 title: >-
   Stink Bugs Invading Your El Dorado Home? Here's How to Actually Get Rid of
   Them
-status: scheduled
+status: published
 publishDate: '2026-11-10'
 scheduledDate: '2026-11-10'
 excerpt: >-
