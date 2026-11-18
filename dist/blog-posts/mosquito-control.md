@@ -1,7 +1,7 @@
 ---
 slug: mosquito-control
 title: 'Mosquito Control That Actually Works: A Homeowner''s Guide for El Dorado, KS'
-status: scheduled
+status: published
 publishDate: '2026-11-17'
 scheduledDate: '2026-11-17'
 excerpt: >-

@@ -1,7 +1,7 @@
 ---
 slug: spider-pest-control
 title: Why Spiders Keep Showing Up in Your Home (And How to Actually Stop Them)
-status: scheduled
+status: published
 publishDate: '2026-11-13'
 scheduledDate: '2026-11-13'
 excerpt: >-
